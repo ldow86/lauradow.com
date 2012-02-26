@@ -10,9 +10,4 @@ class PagesController < ApplicationController
 	def work
 		@title = "Work"
 	end
-
-	def resume
-		@title = "Resume"
-	end
-
 end
