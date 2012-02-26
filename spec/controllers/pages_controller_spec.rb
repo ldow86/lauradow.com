@@ -38,17 +38,4 @@ describe PagesController do
 			response.should have_selector("title", :content => "Laura Dow | Work")
 		end 
 	end
-
-	describe "GET 'resume'" do
-		it "should be successful" do
-			get 'resume'
-			response.should be_success
-		end
-
-		it "should have the right title" do 
-			get 'resume'
-			response.should have_selector("title", :content => "Laura Dow | Resume")
-		end 
-	end
-
 end
