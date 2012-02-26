@@ -1,2 +1,46 @@
-<h1>Pages#work</h1>
-<p>Find me in app/views/pages/work.html.erb</p>
+<script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="/javascripts/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a.gallery").fancybox({
+			'transitionIn'	:	'elastic',
+			'transitionOut'	:	'elastic',
+			'speedIn'		:	600, 
+			'speedOut'		:	200, 
+			'overlayShow'	:	false
+		});
+	});
+</script>
+<article class="workSection">
+	<h3>Through Hunter's Eyes</h3>
+	<a class="gallery" rel="hunter" href="/images/homepage.png" title="Homepage">
+		<img src="/images/homepage.png" alt="Home page" width="100" height="100" />
+	</a>
+	<a class="gallery" rel="hunter" href="/images/archivespage.png" title="Archives page">
+		<img src="/images/archivespage.png" alt="Archives page" width="100" height="100" />
+	</a>
+	<a class="gallery" rel="hunter" href="/images/contactpage.png" title="Contact mailer">
+		<img src="/images/contactpage.png" alt="Contact page" width="100" height="100" />
+	</a>
+	<a class="gallery" rel="hunter" href="/images/deletepage.png" title="Delete page">
+		<img src="/images/deletepage.png" alt="Delete page" width="100" height="100" />
+	</a><br />
+	<a href="http://www.throughhunterseyes.com">throughhunterseyes.com</a>
+	<p>
+		Designer/developer<br />
+		Features: gallery on home page, photo functionality (upload, delete), user functionality, and mailer among others. <br />
+		You can find the code for this website at <a href="http://www.github.com/ldow86/hunter">github.com/lowdow86/hunter</a>
+	</p>
+</article>
+
+<article class="workSection">
+	<h3>Rabbit Meadows</h3>
+	<a class="gallery" rel="rabbitmeadows" href="/images/rabbitmeadowshomepage.png" title="Homepage">
+		<img src="/images/rabbitmeadowshomepage.png" alt="Home page" width="100" height="100" />
+	</a>
+	<p>
+		Designer/developer <br />
+		Spec work.
+	</p>
+</article>
+

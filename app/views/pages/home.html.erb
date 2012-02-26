@@ -1,2 +1,30 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<link rel="stylesheet" type="text/css" href="/stylesheets/jqcloud.css" />
+<script type="text/javascript" src="/javascripts/jqcloud-0.2.10.js"></script>
+<script type="text/javascript">
+
+	var word_list = [
+		{text: "AJAX", weight: 6},
+		{text: "CSS", weight: 12},
+		{text: "HTML", weight: 14},
+		{text: "Javascript", weight: 10},
+		{text: "Ruby", weight: 17},
+		{text: "Rails", weight: 17},
+		{text: "organized", weight: 15},
+		{text: "meticulous", weight: 13},
+		{text: "details", weight: 13},
+		{text: "development", weight: 8},
+		{text: "applications", weight: 10},
+		{text: "mailers", weight: 7},
+		{text: "websites", weight: 9},
+		{text: "sql", weight: 8},
+		{text: "sqlite", weight: 7},
+		{text: "back-end", weight: 16},
+		{text: "jquery", weight: 8}
+	];
+	
+	$(document).ready(function() {
+		$("#wordcloud").jQCloud(word_list);
+	});
+</script>
+<div id="wordcloud" style="width: 550px; height: 350px; position: relative;"></div>
+		
